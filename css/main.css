@@ -106,7 +106,7 @@ header .container {
 	justify-content: space-between;
 	align-items: center;
 	position: relative;
-	min-height: 97px;
+	min-height: 40px;
 }
 header .container::after {
 	content: '';
@@ -157,7 +157,7 @@ header nav ul {
 	}
 }
 header nav ul li a {
-	padding: 40px 10px;
+	padding: 10px 10px;
 	display: block;
 	color: white;
 	text-decoration: none;
@@ -745,13 +745,53 @@ header nav .form i {
 	right: -7px;
 	top: -10px;
 }
-/* .our-siklls .prog-holder {
-	
-}
-.our-siklls .prog-holder h4 {
-
-}
-.our-siklls .prog-holder h4 {
-
-} */
 /* End Siklls */
+
+/*  start Quote  */
+.quote {
+	padding-top: var(--section-padding);
+	padding-bottom: var(--section-padding);
+	background-image: url(../images/IMG-20191208-WA0017.jpg);
+	background-size: cover;
+	position: relative;
+	text-align: center;
+	color: white;
+}
+.quote::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: var(--color-overlay);
+}
+.quote .container {
+	position: relative;
+}
+.quote .container q {
+	font-size: 30px;
+	line-height: 1.8;
+	margin-bottom: 20px;
+	text-align: center;
+	display: block;
+	border-bottom-style: double;
+	/* border-top-style: double; */
+}
+.quote .container q::before {
+	content: "\f10d";
+	font-family: 'font awesome 5 free';
+	font-weight: 900;
+	margin-right: 7px;
+	position: relative;
+	top: -1px;
+}
+.quote .container q::after {
+	content: "\f10e";
+	font-family: 'font awesome 5 free';
+	font-weight: 900;
+	margin-right: 20px;
+	position: relative;
+	top: 7px;
+}
+/*  End Quote  */
