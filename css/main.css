@@ -795,3 +795,49 @@ header nav .form i {
 	top: 7px;
 }
 /*  End Quote  */
+/* Start Price */
+.price {
+	padding-top: var(--section-padding);
+	padding-bottom: var(--section-padding);
+}
+.price .plans {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	gap: 30px;
+	align-items: center;
+}
+.price .plans .plan {
+	background-color: #fffdfd;
+	text-align: center;
+}
+.price .plans .plan .head {
+	padding: 40px 20px;
+	border-top: 1px solid var(--main-color);
+	border-bottom: 1px solid var(--main-color);
+}
+.price .plans .plan .head h3 {
+	font-weight: normal;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+.price .plans .plan .head span {
+	font-size: 60px;
+	font-weight: bold;
+	position: relative;
+}
+.price .plans .plan .head span::before {
+	content: "$";
+	font-size: 25px;
+	top: -40px;
+	margin-right: 15px;
+	font-weight: normal;
+	position: relative;
+}
+.price .plans .plan .head span::after {
+	content: "/mo";
+	font-size: 25px;
+	margin-left: 15px;
+	font-weight: normal;
+	position: relative;
+}
+/* End Price */
